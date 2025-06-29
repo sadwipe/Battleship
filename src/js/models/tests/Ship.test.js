@@ -1,4 +1,4 @@
-import Ship from '../Ship';
+import Ship from '../factories/Ship';
 
 describe('ship constructor validation', () => {
   test('throws an error if length is 0', () => {

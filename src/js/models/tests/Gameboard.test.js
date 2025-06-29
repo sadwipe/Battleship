@@ -1,5 +1,5 @@
-import Gameboard from '../Gameboard';
-import Ship from '../Ship';
+import Gameboard from '../factories/Gameboard';
+import Ship from '../factories/Ship';
 
 describe('Gameboard', () => {
   let board;
@@ -69,7 +69,7 @@ describe('Gameboard', () => {
     board.placeShip(ship, [2, 2], 'h');
 
     const result = board.receiveAttack([2, 2]);
-    const result2 = board.receiveAttack([2, 3])
+    const result2 = board.receiveAttack([2, 3]);
 
     expect(result).toEqual({ hit: true });
     expect(result2).toEqual({ hit: true });
