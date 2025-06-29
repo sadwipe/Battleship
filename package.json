@@ -30,7 +30,7 @@
     "prebuild": "npm run check && echo 'Formatted and Linted'",
     "build": "webpack",
     "start": "webpack serve",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "keywords": [],
   "author": "",
