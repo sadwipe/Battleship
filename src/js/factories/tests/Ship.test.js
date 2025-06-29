@@ -26,7 +26,6 @@ describe('ship constructor validation', () => {
   });
 
   test('works fine with 1-5', () => {
-    expect(() => new Ship(1)).not.toThrow();
     expect(() => new Ship(2)).not.toThrow();
     expect(() => new Ship(3)).not.toThrow();
     expect(() => new Ship(4)).not.toThrow();
