@@ -17,9 +17,9 @@ describe('Player', () => {
 
   test('should have a fresh gameboard with empty cells', () => {
     const player = new Player();
-    for (let row of player.gameboard.board) {
-      for (let cell of row) {
-        expect(cell).toBe(0);
+    for (let i = 0; i < player.gameboard.board.length; i++) {
+      for (let j = 0; j < player.gameboard.board.length; j++) {
+        expect(player.gameboard.board[i][j]).toBe(0);
       }
     }
   });
