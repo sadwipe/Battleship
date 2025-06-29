@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.0.3",
+    "prettier": "^3.5.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "name": "weather-app",
+  "description": "This is a file where I have configured Webpack in order to use the following:",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.jsx --max-warnings=0",
+    "check": "npm run format && npm run lint",
+    "prebuild": "npm run check && echo 'Formatted and Linted'",
+    "build": "webpack",
+    "start": "webpack serve",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
