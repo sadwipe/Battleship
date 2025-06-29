@@ -19,7 +19,7 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   },
-  "name": "Battleship",
+  "name": "battleship",
   "description": "This is a project where I will implement the game Battleship, evaluating TDD",
   "version": "1.0.0",
   "main": "webpack.config.js",
