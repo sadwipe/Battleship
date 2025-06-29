@@ -19,8 +19,8 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   },
-  "name": "weather-app",
-  "description": "This is a file where I have configured Webpack in order to use the following:",
+  "name": "Battleship",
+  "description": "This is a project where I will implement the game Battleship, evaluating TDD",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
