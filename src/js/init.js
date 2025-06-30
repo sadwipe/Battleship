@@ -11,7 +11,6 @@ import renderRestartModal from './ui/renderRestartModal';
 import restartValues from './utils/restartValues';
 
 export default async function init() {
-  
   restartValues();
   renderModal();
   const player = new Player();
@@ -52,6 +51,6 @@ export default async function init() {
     currentPlayer = currentPlayer === player ? computer : player;
   }
   /* eslint-enable no-await-in-loop */
-  const winner = player.gameboard.numberOfShips === 0 ? "Computer" : "Player"
+  const winner = player.gameboard.numberOfShips === 0 ? 'Computer' : 'Player';
   renderRestartModal(winner);
 }

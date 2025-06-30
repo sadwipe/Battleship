@@ -5,7 +5,6 @@ export default async function computerAttack(board, gameboard) {
     let isHit = false;
     while (!isHit) {
       const coordinates = getRandomCoordinates();
-      console.log(coordinates);
       isHit = gameboard.receiveAttack(coordinates).hit;
     }
     resolve();

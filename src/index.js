@@ -5,3 +5,7 @@ import './styles/style.css';
 import init from './js/init';
 
 init();
+
+document.addEventListener('restartGame', () => {
+  init();
+});
