@@ -37,6 +37,8 @@ export default class Gameboard {
 
   // Verifies if we can place the ship on coordinates
   checkPosition(length, x, y, orientation) {
+    x = Number(x);
+    y = Number(y);
     const xMax = orientation === 'h' ? x : x + length - 1;
     const yMax = orientation === 'h' ? y + length - 1 : y;
 
@@ -62,7 +64,10 @@ export default class Gameboard {
     }
 
     const { length } = ship;
-    const [x, y] = coordinates;
+    let [x, y] = coordinates;
+
+    x = Number(x);
+    y = Number(y);
 
     if (!this.checkPosition(length, x, y, orientation)) {
       throw new Error('Invalid position.');
