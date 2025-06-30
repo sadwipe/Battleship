@@ -6,8 +6,14 @@ import Player from './models/factories/Player';
 import gameIsOver from './utils/gameIsOver';
 import playerAttack from './ui/playerAttack';
 import computerAttack from './ui/computerAttack';
+import renderModal from './ui/renderModal';
+import renderRestartModal from './ui/renderRestartModal';
+import restartValues from './utils/restartValues';
 
 export default async function init() {
+  
+  restartValues();
+  renderModal();
   const player = new Player();
   const computer = new Player(true);
   let currentPlayer = player;
@@ -45,6 +51,7 @@ export default async function init() {
     }
     currentPlayer = currentPlayer === player ? computer : player;
   }
-  console.log('Game finish');
   /* eslint-enable no-await-in-loop */
+  const winner = player.gameboard.numberOfShips === 0 ? "Computer" : "Player"
+  renderRestartModal(winner);
 }
