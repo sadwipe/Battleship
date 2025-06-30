@@ -217,8 +217,12 @@ body {
 
 .cell.miss {
   background-color: var(--cell-miss-bg);
+  user-select: none;
+  pointer-events: none;
 }
 
 .cell.hit {
   background-color: var(--cell-hit-bg);
+  user-select: none;
+  pointer-events: none;
 }

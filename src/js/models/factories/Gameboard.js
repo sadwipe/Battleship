@@ -86,17 +86,32 @@ export default class Gameboard {
   }
 
   receiveAttack(coordinates) {
-    const [x, y] = coordinates;
+    let [x, y] = coordinates;
+
+    x = Number(x);
+    y = Number(y);
 
     if (this.isOutOfBounds(x, y)) {
       throw new Error('Invalid position');
+    }
+
+    if (this.board[x][y] === 1) {
+      return {
+        hit: false,
+      };
+    }
+
+    if (this.board[x][y] === 2) {
+      return {
+        hit: false,
+      };
     }
 
     // Miss
     if (this.board[x][y] === 0) {
       this.board[x][y] = 2;
       return {
-        hit: false,
+        hit: true,
       };
     }
 

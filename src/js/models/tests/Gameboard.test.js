@@ -61,7 +61,7 @@ describe('Gameboard', () => {
     const result = board.receiveAttack([0, 0]);
 
     expect(board.board[0][0]).toBe(2); // Miss marker
-    expect(result).toEqual({ hit: false });
+    expect(result).toEqual({ hit: true });
   });
 
   test('receiveAttack hits a ship and updates board', () => {

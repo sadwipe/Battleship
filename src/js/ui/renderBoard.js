@@ -1,4 +1,4 @@
-export default function renderBoard(boardElement, gameboard) {
+export default function renderBoard(boardElement, gameboard, isComputer) {
   boardElement.innerHTML = '';
 
   for (let i = 0; i < 10; i++) {
@@ -14,7 +14,7 @@ export default function renderBoard(boardElement, gameboard) {
         cell.classList.add('hit');
       } else if (value === 2) {
         cell.classList.add('miss');
-      } else if (typeof value === 'object') {
+      } else if (typeof value === 'object' && !isComputer) {
         cell.classList.add('placed');
       }
 
