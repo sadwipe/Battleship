@@ -2,7 +2,7 @@
 
 A modular, test-driven implementation of the classic Battleship game built in vanilla JavaScript, emphasizing Object-Oriented Design (OOD) and Test-Driven Development (TDD) with Jest.
 
-![Battleship Gameplay Preview](./assets/preview.png)
+![Battleship Gameplay Preview](./src/assets/preview.png)
 
 ## Live Demo
 Play the game live: **[sadwipebattleship.netlify.app](https://sadwipebattleship.netlify.app/)**
